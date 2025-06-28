@@ -114,3 +114,4 @@ def get_map(pdb, all_dist_paths, expected_l=-1):
             else:
                 Y[q, q] = (left + right) / 2.0
     return Y
+
