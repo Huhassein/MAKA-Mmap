@@ -14,14 +14,10 @@ python train.py \
 data_dir/
 
 ├── train/
-
 │   ├── features/*.pkl
-
 │   └── distance/*.npy
-
 ├── CASP/
 │   ├── features/*.pkl
-
 │   └── distance/*.npy
 ...
 
