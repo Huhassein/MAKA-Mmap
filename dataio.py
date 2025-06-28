@@ -12,7 +12,7 @@ def load_list(file_lst, max_items=1000000):
         for line in f:
             protein_list.append(line.strip().split()[0])
     return protein_list[:max_items]
-
+    
 def get_input_output_dist(pdb_id_list, all_feat_paths, all_dist_paths, pad_size, OUTL, expected_n_channels):
     XX = np.full((len(pdb_id_list), OUTL, OUTL, expected_n_channels), 0.0, dtype=np.float32)
     YY = np.full((len(pdb_id_list), OUTL, OUTL, 1), 100.0, dtype=np.float32)
