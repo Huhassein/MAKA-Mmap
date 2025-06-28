@@ -1,5 +1,5 @@
 import numpy as np
-from disteval import *
+from eval_utils import *
 epsilon = 1e-7
 
 def evaluate_distances(PRED, YTRUE, pdb_list, length_dict):
