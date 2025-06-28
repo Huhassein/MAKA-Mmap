@@ -1,0 +1,4 @@
+causal_conv1d-1.0.0
+mamba_ssm-1.0.1
+python 3.10.12
+torch 2.0.1
