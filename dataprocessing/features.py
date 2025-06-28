@@ -130,4 +130,3 @@ for protein_id in protein_ids:
         pickle.dump(ordered_features, f)
 
     print(f"Saved features for {protein_id} to {pkl_file}")
-
