@@ -2,7 +2,7 @@
 This repository implements a deep learning pipeline for predicting real-valued inter-residue distance maps from protein features, along with tools for training, evaluation, and visualization. The model combines advanced architectures (e.g., Mamba, KAN) and supports modular evaluation with detailed metrics.
 
 🚀 Training the Model
-python train_or_eval.py \
+python train.py \
   -w ./checkpoints/best_model.pkl \
   -n 9000 \
   -e 30 \
@@ -21,7 +21,7 @@ data_dir/
 ...
 
 📊 Evaluation Only Mode
-python train_or_eval.py \
+python eval.py \
   -w ./checkpoints/best_model.pkl \
   -n 0 \
   -e 0 \
