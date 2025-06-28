@@ -12,11 +12,16 @@ python train.py \
 
 📦 Dataset Structure
 data_dir/
+
 ├── train/
+
 │   ├── features/*.pkl
+
 │   └── distance/*.npy
+
 ├── CASP/
 │   ├── features/*.pkl
+
 │   └── distance/*.npy
 ...
 
