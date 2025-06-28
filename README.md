@@ -1,5 +1,5 @@
 # MAKA-Mmap
-This repository implements a deep learning pipeline for predicting real-valued inter-residue distance maps from protein features, along with tools for training, evaluation, and visualization. The model combines advanced architectures (e.g., Mamba, KAN) and supports modular evaluation with detailed metrics.
+This repository implements a deep learning pipeline for predicting real-valued inter-residue distance maps from protein features, along with tools for training, evaluation, and visualization.
 
 🚀 Training the Model
 python train.py \
