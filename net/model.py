@@ -407,3 +407,4 @@ class Mambakan(nn.Module):
         skips[-1] = middle_output
         out = self.res2(skips)
         return out
+
