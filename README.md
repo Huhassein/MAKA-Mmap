@@ -34,4 +34,5 @@ python eval.py \
   -o ./results_eval \
   -p /path/to/data_dir \
   -v 1
+
 Predictions will be saved as .npy matrices in the results/ folder.
