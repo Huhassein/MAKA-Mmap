@@ -37,9 +37,6 @@ if not flag_eval_only:
         (ly, seqy, cb_map) = np.load(dir_dataset + '/deepcov/distance/' + pdb + '-cb.npy', allow_pickle=True)
         length_dict[pdb] = ly
     val_dict = {}
-    for pdbc in val_list:
-        (ly, seqy, cb_map) = np.load(dir_dataset + '/val/distance/' + pdbc + '-cb.npy', allow_pickle=True)
-        val_dict[pdbc] = ly
 
     train_pdbs = deepcov_list
     valid_pdbs = val_list
@@ -126,10 +123,9 @@ else:
     valid_pdbs = []
     for pdb in test_list:
         data = np.load(os.path.join(dir_dataset, 'CASP/distance', f"{pdb}-cb.npy"), allow_pickle=True)
-        if isinstance(data, np.ndarray) and data.dtype == object:
-            ly, seqy, cb_map = data
-            test_length_dict[pdb] = ly
-            valid_pdbs.append(pdb)
+        (ly, seqy, cb_map) = np.load(dir_dataset + '/deepcov/distance/' + pdb + '-cb.npy', allow_pickle=True)
+        test_length_dict[pdb] = ly
+        valid_pdbs.append(pdb)
     
     test_list = valid_pdbs   
     evalsets = {'test': {'LMAX': 400, 'list': test_list, 'lendict': test_length_dict}}
