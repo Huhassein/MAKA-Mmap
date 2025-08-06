@@ -122,8 +122,7 @@ else:
     test_length_dict = {}
     valid_pdbs = []
     for pdb in test_list:
-        data = np.load(os.path.join(dir_dataset, 'CASP/distance', f"{pdb}-cb.npy"), allow_pickle=True)
-        (ly, seqy, cb_map) = np.load(dir_dataset + '/deepcov/distance/' + pdb + '-cb.npy', allow_pickle=True)
+        (ly, seqy, cb_map) = np.load(dir_dataset + '/CASP/distance/' ,f"{pdb}-cb.npy", allow_pickle=True)
         test_length_dict[pdb] = ly
         valid_pdbs.append(pdb)
     
